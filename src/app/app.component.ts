@@ -10,6 +10,11 @@ export class AppComponent {
   date: string;
   amount: number;
   height: number;
+  miles: number;
+
+  onMilesChange(value: string) {
+    this.miles = parseFloat(value);
+  }
 
   onHeightChange(value: string) {
     this.height = parseFloat(value);
